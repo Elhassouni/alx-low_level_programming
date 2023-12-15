@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * puts is function c that print string directly to the standard output
- * Return 0 if succesfully the program executed
+ * main - Using Puts function to print string
+ * Return: 0 (Success)
  */
 
 int main(void)
