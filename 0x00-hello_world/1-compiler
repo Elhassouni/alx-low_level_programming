@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -c  "$CFILE" -o "{$CFILE%.c}.o"
+gcc -c $CFILE
