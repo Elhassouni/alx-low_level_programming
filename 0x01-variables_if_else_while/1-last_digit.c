@@ -14,22 +14,23 @@ int main(void)
 {
 	/* I used modelo operator to get the last digit*/
 	int n;
-	int lastnumber;
+	int last;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastnumber = n % 10;
-	if (lastnumber > 5)
+	last = n % 10;
+
+	if (last > 5)
 	{
-	printf("Last digit of %d is %d is greater than 5\n", n, lastnumber);
+	printf("Last digit of %d is %d is greater than 5\n", n, last);
 	}
-	else if (lastnumber == 0)
+	else if	(last == 0)
 	{
-	printf("Last digit of %d is %d and is 0\n", n, lastnumber);
+	printf("Last digit of %d is %d and is 0\n", n, last);
 	}
-	else if (lastnumber < 6 && lastnumber != 0)
+	else if	(last < 6 && last != 0)
 	{
-printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastnumber);
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
 	}
 	return (0); /*Return 0 for success*/
 }
