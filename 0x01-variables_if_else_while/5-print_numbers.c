@@ -12,9 +12,10 @@ int main(void)
 	int num = 0;
 
 	/*print numbers from 0 to 9 */
-	while (num <= 10)
+	while (num <= 9)
 	{
-		printf("%d,"num);
+		printf("%d", num);
+		num++;
 	}
 
 	printf("\n");
