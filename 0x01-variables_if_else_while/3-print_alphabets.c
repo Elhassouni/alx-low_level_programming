@@ -27,6 +27,7 @@ int main(void)
 			upper++;
 		}
 	}
+		putchar('$');
 		putchar('\n');
 		return (0);/*return will output 0 is case (success)*/
 }
