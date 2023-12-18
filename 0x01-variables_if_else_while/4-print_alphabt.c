@@ -2,7 +2,7 @@
 
 /**
  *main - Print all the letters except q and e with new line
- * 
+ *
  * Description:program that prints the alphabet in lowercase.
  * Return: 0 (success)
  */
@@ -11,11 +11,10 @@ int main(void)
 {
 
 	char i = 'a';
-	
 	/* Print 'a' -- 'z' */
 	while (i <= 'z')
 	{	
-		if (i == 'p' || i == 'e')
+		if (i == 'q' || i == 'e')
 		{
 			i++;
 		}
