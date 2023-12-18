@@ -13,12 +13,18 @@ int main(void)
 	char i = 'a';
 	
 	/* Print 'a' -- 'z' */
-	while (i <= 'z' && (i != 'p' || i != 'e'))
-	{
-		putchar(i);
-		i++;
+	while (i <= 'z')
+	{	
+		if (i == 'p' || i == 'e')
+		{
+			i++;
+		}
+		else
+		{
+			putchar(i);
+			i++;
+		}
 	}
-	
 	putchar('\n');
 	return (0);/*return will output 0 is case (success)*/
 }
