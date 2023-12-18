@@ -13,7 +13,7 @@ int main(void)
 	char i = 'a';
 	/* Print 'a' -- 'z' */
 	while (i <= 'z')
-	{	
+	{
 		if (i == 'q' || i == 'e')
 		{
 			i++;
