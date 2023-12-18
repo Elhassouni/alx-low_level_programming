@@ -9,24 +9,23 @@
 
 int main(void)
 {
-	char lastletter = 'z';
+	
 	char i = 'a';
 	char upper = 'A';
-	char lastupper = 'Z';
-
-	while (upper < lastupper || upper < lastupper)
+	
+	/* Print 'a' -- 'z' */
+	while	(i <= 'z')
 	{
-		if (i < lastletter)
-		{
-			putchar(i);
-			i++;
-		}
-		else if (upper < lastupper)
+		putchar(i);
+		i++;
+	
+	}
+	while	(upper <= 'Z')
 		{
 			putchar(upper);
 			upper++;
+			
 		}
-	}
-		putchar("$\n");
+		putchar('\n');
 		return (0);/*return will output 0 is case (success)*/
 }
