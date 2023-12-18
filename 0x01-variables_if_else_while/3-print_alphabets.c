@@ -9,23 +9,21 @@
 
 int main(void)
 {
-	
+
 	char i = 'a';
 	char upper = 'A';
-	
 	/* Print 'a' -- 'z' */
-	while	(i <= 'z')
+	while (i <= 'z')
 	{
 		putchar(i);
 		i++;
-	
 	}
-	while	(upper <= 'Z')
-		{
-			putchar(upper);
-			upper++;
-			
-		}
-		putchar('\n');
-		return (0);/*return will output 0 is case (success)*/
+	/*Print 'A' --- 'Z' */
+	while (upper <= 'Z')
+	{
+		putchar(upper);
+		upper++;
+	}
+	putchar('\n');
+	return (0);/*return will output 0 is case (success)*/
 }
