@@ -10,7 +10,7 @@
 
 int main(void)
 {	/*printing "putchar" with for loop and putchar fuction using header*/
-	char letter[9] = "_putchar";
+	char letter[] = "_putchar";
 	int i;
 
 	for (i = 0; i <= 9; i++)
