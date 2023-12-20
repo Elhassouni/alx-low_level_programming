@@ -1,6 +1,6 @@
 #include "main.h"
 
- /**
+/**
   * main - Entry point for the program
   *
   * Description: I will use a function to print the string
