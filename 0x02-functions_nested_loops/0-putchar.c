@@ -1,23 +1,23 @@
 #include "main.h"
 
-/**
+ /**
+  * main - Entry point for the program
   *
-  * main - Program to print "_putchar" followed with new line
+  * Description: I will use a function to print the string
   *
-  *Description: I will use a function to print the string
-  *
-  *Return: return 0 if program exit with (success)
+  * Return: return 0 if program exit with (success)
   */
 
 int main(void)
-{
-	char letter[999999999] = "_putchar\n";
+{	/*printing "putchar" with for loop and putchar fuction using header*/
+	char letter[9] = "_putchar";
 	int i;
 
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		_putchar(letter[i]);
 	}
-	
+	_putchar('\n');
+
 	return (0);
 }
