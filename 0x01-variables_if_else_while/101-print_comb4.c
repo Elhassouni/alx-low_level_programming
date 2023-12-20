@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *main - program that prints all possible different combinations of two digits
+ *main - program  prints all possible different combinations of three digits.
  *
- * Description using nested 'while' loop and putchar only to print digit
+ * Description using nested for-loop and putchar only to print digit
  * Return: 0 (success)
  */
 int main(void)
