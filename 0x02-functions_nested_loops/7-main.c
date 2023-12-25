@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 #include "main.h"
 
 /**
@@ -9,7 +10,7 @@
 int main(void)
 {
     int r;
-
+	print_last_digit(INT_MIN);
     print_last_digit(98);
     print_last_digit(0);
     r = print_last_digit(-1024);
