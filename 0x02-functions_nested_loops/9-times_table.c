@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
   * times_table - function that prints the 9 times table, starting with 0
@@ -23,16 +24,22 @@ void times_table(void)
 		{
 			int number = i * j;
 
-			if (number >= 10)
+			if (number >= 9)
 			{
 				_putchar('0' + number / 10);
 			}
 			_putchar('0' + number % 10);  /* print ones place */
-			_putchar(',');
-			_putchar(' ');
+			if (j == 9)
+			{
+				_putchar('\n');
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			j++;
 		}
-		_putchar('\n');
 		i++;
 	}
 }
