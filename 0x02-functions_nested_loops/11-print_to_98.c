@@ -13,34 +13,18 @@
  * Return: No return value.
  */
 
+#define NUMBER 98
+
 void print_to_98(int n)
 {
-	int i;
 
-	i = 99;
+	int pass = (n <=   NUMBER) ? 1 : -1;
 
-	while (n < i || n > i)
+	while (n != NUMBER)
 	{
-		if (n <= i)
-		{
-			printf("%d", n);
-			n++;
-		}
-		else if (n > 98)
-		{
-			printf("%d", n);
-			n--;
-			}
-		else if (n < 0)
-		{
-			printf("%d", n);
-			n--;
-		}
-		if (n == 99)
-			printf("\n");
-		else
-			printf(", ");
+		printf("%d, ", n);
+		n += pass;
 	}
-	printf("\n");
 
+	printf("%d\n", NUMBER);
 }
