@@ -5,6 +5,7 @@
  * print_to_98 - Prints numbers from n to 98.
  *
  * @n: The starting number.
+ * @NUMBER : TARGET NEMBER.
  *
  * Description: This function prints numbers from the given starting
  * number (@n) to 98, separated by commas. It handles different cases
