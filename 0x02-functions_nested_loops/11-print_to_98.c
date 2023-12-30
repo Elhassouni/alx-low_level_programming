@@ -19,7 +19,7 @@ void print_to_98(int n)
 
 	i = 98;
 
-	if (n <= 0)
+	if (n <= 0 || n < i )
 	{
 		while (n <= i)
 		{
