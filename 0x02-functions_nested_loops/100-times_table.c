@@ -13,7 +13,7 @@ void print_times_table(int n)
 	int i, j, number;
 
 	i = 0;
-	if (n != 0 && n <= 15)
+	if (n >= 0 && n <= 15)
 	{
 		while (i <= n)
 		{
@@ -24,11 +24,11 @@ void print_times_table(int n)
 				putchar(',');
 				putchar(' ');
 				number = i * j;
-				if (number <= 99)
+				if (number <= 9)
 				{
 					putchar(' ');
 				}
-				if (number <= 9)
+				if (number <= 99)
 				{
 					putchar(' ');
 				}
