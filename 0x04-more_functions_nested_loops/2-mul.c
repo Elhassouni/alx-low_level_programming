@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
-  * _isdigit - function that checks for a digit (0 through 9)..
+  * mul - function that checks for a digit (0 through 9)..
   *
-  * @c:  digits and char to be check
+  * @a:  first paramaters for multiplication
+  * @b: second paramaters for multiplication
   *
-  * Return: return 1 if digit || return 0 otherwise
+  * Return: return RESULT
   *
   */
 
