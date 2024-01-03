@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * fizz_bazz - prints Fizz, Buzz, or FizzBuzz based on certain conditions.
