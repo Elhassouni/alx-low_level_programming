@@ -1,11 +1,14 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * fizz_bazz - prints Fizz, Buzz, or FizzBuzz based on certain conditions.
+ * fizz_bazz - function that prints Fizz, Buzz, or FizzBuzz 
+ * based on certain conditions.
+ *
  * @num: Limit for the loop.
  *
  * Return: Always 0.
  */
+
 void fizz_bazz(int num)
 {
 	int i;
