@@ -39,3 +39,14 @@ void fizz_bazz(int num)
 	}
 	printf("\n");
 }
+
+
+
+
+
+int main(void)
+{
+	fizz_bazz(100);
+
+	return (0);
+}
