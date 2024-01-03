@@ -18,8 +18,8 @@ void fizz_bazz(int num)
 	{
 		int n, n_2;
 
-		n = i % 3;
-		n_2 = i % 5;
+		n = i % 3 == 0;
+		n_2 = i % 5 == 0;
 		if (n == 0 && n_2 == 0)
 		{
 			printf("FizzBuzz ");
