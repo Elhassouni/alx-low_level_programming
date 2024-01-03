@@ -38,7 +38,7 @@ void fizz_bazz(int num)
 		}
 		if (i < num)
 		{
-			_putchar(' ');
+			printf(" ");
 		}
 	}
 	printf("\n");
