@@ -36,15 +36,3 @@ void fizz_bazz(int num)
 	}
 	printf("\n");
 }
-
-
-/**
- * main - Entry point of the program.
- *
- * Return: Always 0.
- */
-int main()
-{
-	fizz_bazz(100);
-	return 0;
-}
