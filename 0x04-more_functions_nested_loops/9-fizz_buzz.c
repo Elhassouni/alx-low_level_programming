@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * fizz_bazz - prints Fizz, Buzz, or FizzBuzz based on certain conditions.
  * @num: Limit for the loop.
