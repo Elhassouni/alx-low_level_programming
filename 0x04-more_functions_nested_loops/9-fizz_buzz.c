@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * fizz_bazz - function that prints Fizz, Buzz, or FizzBuzz 
+ * fizz_bazz - function that prints Fizz, Buzz, or FizzBuzz
  * based on certain conditions.
  *
  * @num: Limit for the loop.
@@ -40,9 +40,11 @@ void fizz_bazz(int num)
 	printf("\n");
 }
 
-
-
-
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 
 int main(void)
 {
