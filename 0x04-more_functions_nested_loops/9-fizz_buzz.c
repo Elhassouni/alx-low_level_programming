@@ -22,19 +22,23 @@ void fizz_bazz(int num)
 		n_2 = i % 5 == 0;
 		if (n == 0 && n_2 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (n == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else if (n_2 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
 			printf("%d ", i);
+		}
+		if (i < num)
+		{
+			_putchar(' ');
 		}
 	}
 	printf("\n");
