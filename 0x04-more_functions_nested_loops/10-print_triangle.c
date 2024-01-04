@@ -18,16 +18,16 @@ void print_triangle(int size)
 	{
 		int i, j, k;
 
-		i = 0;
-		while (i < size)
+		i = 1;
+		while (i <= size)
 		{
-			j = 0;
+			j = 1;
 			while (j <= size - i)
 			{
 				_putchar(' ');
 				j++;
 			}
-			k = 0;
+			k = 1;
 			while (k <= i)
 			{
 				_putchar('#');
