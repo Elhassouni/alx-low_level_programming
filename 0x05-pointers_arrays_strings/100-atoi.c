@@ -1,42 +1,49 @@
 #include "main.h"
 
 /**
- * *_strcpy -  function that copies the string pointed to by src,
- * including the terminating null byte (\0), to the buffer pointed to by dest.
+ * _atoi - Converts a string to an integer.
+ * @s: The input string.
  *
- * @dest: pointer to the first address on the string.
- * @src: size of array.
- *
- * Return: return pointer dest.
+ * Return: The integer value.
  */
 
-
-int _atoi(const char* str)
+int _atoi(char *s)
 {
-    int res, i, sign;
+	int res, i, sign, length;
 
-    sign = 1;
-    i = 0;
-    res = 0;
+	sign = 1;
+	i = 0;
+	res = 0;
+	length = strlen(s);
 
+	int digitFound = 0;  /* Flag to track if at least one digit is found */
 
-    while (str[i] == ' ' || str[i] == '\t'|| str[i] == '\n')
-    {
-        i++;
-    }
-    while (str[i] == '+' || str[i] == '-')
-    {
-        sign = (str[i] == '-') ? -1 : 1;
-        i++;
-    }
+	while ((s[i] >= 9 && s[i] <= 13) || s[i] == 32)
+	{
+		i++;
+	}
+	while (s[i] == '+' || s[i] == '-')
+	{
+		sign = (s[i] == '-') ? -1 : 1;
+		i++;
+	}
 
+	for (; s[i] != '\0'; i++)
+	{
+		if (s[i] >= '0' && s[i] <= '9')
+	{
+		int digitValue = s[i] - '0';
 
-    for (;i < length && str[i] != '\0'; i++)
-    {
-        int digitvalue = str[i] - '0';
-        res = res * 10 + digitvalue;
-
-    }
-    return sign * res;
+		res = res * 10 + digitValue;
+		digitFound = 1;
+	}
+		else
+		{
+			if (digitFound)
+			{
+				break;
+			}
+		}
+	}
+		return (sign * res);
 }
-
