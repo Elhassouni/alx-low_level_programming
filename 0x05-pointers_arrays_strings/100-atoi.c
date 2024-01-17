@@ -30,9 +30,7 @@ int _atoi(char *s)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 	{
-		int digitValue = s[i] - '0';
-
-		res = res * 10 + digitValue;
+		res = (res * 10) + (s[i] - '0';);
 		digitFound = 1;
 	}
 		else
