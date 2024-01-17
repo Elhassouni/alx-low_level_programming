@@ -9,14 +9,11 @@
 
 int _atoi(char *s)
 {
-	int res, i, sign;
+	int res, i, sign, digitFound;
 
 	sign = 1;
 	i = 0;
 	res = 0;
-
-	int digitFound;
-
 	digitFound = 0;  /* Flag to track if at least one digit is found */
 
 	while ((s[i] >= 9 && s[i] <= 13) || s[i] == 32)
