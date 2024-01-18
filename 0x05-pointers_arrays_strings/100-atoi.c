@@ -9,9 +9,11 @@
 
 int _atoi(char *s)
 {
+
 	int i, digitFound, sign;
+
 	unsigned int res;
-	
+
 	res = 0;
 	sign = 1;
 	i = 0;
@@ -21,7 +23,7 @@ int _atoi(char *s)
 	{
 		i++;
 	}
-	while (s[i] == '-')
+	while (s[i] || s[i] == '-')
 	{
 		sign = (s[i] == '-') ? -1 : 1;
 		i++;
