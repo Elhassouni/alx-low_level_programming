@@ -10,8 +10,9 @@
 int _atoi(char *s)
 {
 	int i, digitFound, sign;
-	int res;
-
+	unsigned int res;
+	
+	res = 0;
 	sign = 1;
 	i = 0;
 	digitFound = 0;  /* Flag to track if at least one digit is found */
