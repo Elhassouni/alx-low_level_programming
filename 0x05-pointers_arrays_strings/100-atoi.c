@@ -23,9 +23,9 @@ int _atoi(char *s)
 	{
 		i++;
 	}
-	while (s[i] =='-' || s[i] == '+')
+	while (s[i] == '-')
 	{
-		sign = (s[i] == '-') ? -1 : 1;
+		sign *= -1;
 		i++;
 	}
 	for (; s[i] != '\0'; i++)
