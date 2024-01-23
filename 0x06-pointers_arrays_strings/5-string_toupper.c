@@ -8,6 +8,9 @@
  */
 char *string_toupper(char *n)
 {
+	char *start;
+
+	start = n;
 	while (*n != '\0')
 	{
 		if (*n >= 97 && *n <= 122)
