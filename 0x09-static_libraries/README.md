@@ -1,5 +1,3 @@
-Certainly! Here's the README.md with the mentioned section removed:
-
 ---
 
 # C Library Basics and Usage 📚
