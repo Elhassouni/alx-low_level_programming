@@ -1,5 +1,4 @@
-
-I apologize for any confusion. I've adjusted the terms to better align with the standard compilation process. Please find the modified diagram and explanation below:
+# 🌐 Building and Using "C" Libraries with Visual Guide 
 
 ```plaintext
                +-------------------+
