@@ -82,9 +82,6 @@ Additional notes:
 
 - This smart explanation provides a colorful journey through the compilation and linking phases, making the process both educational and engaging.
 
-Feel free to ask if you have further questions or if you'd like additional modifications!
-```
-###########################################################################
 # 🌟 Building and Using "C" Libraries 🌟
 
 ## Simplifying Complex Programs
