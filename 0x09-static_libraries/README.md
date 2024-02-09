@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 Absolutely! Here's the README.md with a section summarizing what we covered:
 
+=======
+>>>>>>> a62c14ba34bbd107a4d41a8ebcbaeb63451d449c
 ---
 
 # 🌟 Building and Using "C" Libraries 🌟
