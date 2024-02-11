@@ -9,11 +9,10 @@
   *
   */
 
-
 int main(int argc, char *argv[] __attribute__((unused)))
 {
 	int i, x;
-	
+
 	x = 0;
 	for (i = 1; i < argc; i++)
 	{
