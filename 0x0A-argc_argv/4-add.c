@@ -18,16 +18,17 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, result;
+	int j, i, result;
 	
 	i = 0;
+	j = 0;
 	if (argc < 1)
 	{
 		printf("%d", 0);	
 	}
 	while (i < argc)
 	{
-		if (isalpha(argv[i][0]))
+		if (isalpha(argv[i][j]))
 		{
 			printf("Error");
 			return (1);
@@ -37,6 +38,7 @@ int main(int argc, char *argv[])
 		result += atoi(argv[i]);
 		}
 		i++;
+		j++;
 	}
 	printf("%d\n", result);
 	return (0);
