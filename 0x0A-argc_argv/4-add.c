@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * main - This function adds positive numbers.
  *
@@ -11,30 +10,25 @@
  * This program takes command-line arguments, treating them as strings,
  * and attempts to calculate the sum of valid integers found in the arguments.
  * 
- *
  * Return: return 0 for success and 1 otherwise.
  */
 int main(int argc, char *argv[])
 {
 	int j, i, sum;
-	
-	sum = 0;
 
-	
+	sum = 0;
 	if (argc < 1)
 	{
 		printf("%d\n", 0);
 	}
-	
 	for (i = 1; i < argc; i++)
-	{ 
+	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 	/*		if (isalpha(argv[i][j]))
 			{
 				printf("Error\n");
-				return (1);
-			}
+				return (1);}
 	*/
 				if (argv[i][j] < '0' || argv[i][j] > '9')
 				{
@@ -43,8 +37,7 @@ int main(int argc, char *argv[])
 				}
 		}
 		sum += atoi(argv[i]);
-				
-	}	
+	}
 	printf("%d\n", sum);
 	return (0);
 }
