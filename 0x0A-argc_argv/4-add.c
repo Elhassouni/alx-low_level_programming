@@ -2,9 +2,7 @@
 
 
 /**
- * main - This function adds positive numbers. and calculates
- * the sum of valid integers provided as command-line arguments,
- * while checking for non-digit characters in each argument's first character.
+ * main - This function adds positive numbers.
  *
  * @argc: The number of command-line arguments.
  * @argv: An array of strings containing the command-line arguments.
