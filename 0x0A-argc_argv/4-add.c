@@ -9,7 +9,7 @@
  * Description:
  * This program takes command-line arguments, treating them as strings,
  * and attempts to calculate the sum of valid integers found in the arguments.
- * 
+ *
  * Return: return 0 for success and 1 otherwise.
  */
 int main(int argc, char *argv[])
@@ -25,16 +25,11 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-	/*		if (isalpha(argv[i][j]))
+			if ((argv[i][j]	< '0') || (argv[i][j] > '9'))
 			{
 				printf("Error\n");
-				return (1);}
-	*/
-				if (argv[i][j] < '0' || argv[i][j] > '9')
-				{
-					printf("Error\n");
-		        	        return 1;
-				}
+				return (1);
+			}
 		}
 		sum += atoi(argv[i]);
 	}
