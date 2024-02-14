@@ -22,7 +22,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	/* Allocate memory for the array */
-	str = malloc((sizeof(char) * size) + 1);
+	str = malloc(sizeof(char) * size);
 	/* Check if memory allocation is successful */
 	if (str == NULL)
 	{
