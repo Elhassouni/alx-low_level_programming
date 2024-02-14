@@ -65,5 +65,4 @@ In C programming, memory allocation can occur in two main ways: automatic and dy
 
 ---
 
-Feel free to customize and expand this README.md based on your specific needs. 🎉
 
