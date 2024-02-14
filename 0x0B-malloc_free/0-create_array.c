@@ -34,7 +34,5 @@ char *create_array(unsigned int size, char c)
 		str[i] = c;
 	}
 	/* Add null terminator to make it a valid string */
-	str[size] = '\0';
-
 	return (str);
 }
