@@ -1,30 +1,25 @@
+# Project: 0x0D. C - Preprocessor
 
-General
+## Resources
 
+#### Read or watch:
 
-Why C programming is awesome?
+* [Understanding C program Compilation Process](https://intranet.alxswe.com/rltoken/X0ithSsqlz_D0c8V8uA1HQ)
+* [Object-like Macros](https://intranet.alxswe.com/rltoken/kaqIw352MSJ8xoi1xU09ZA)
+* [Macro Arguments](https://intranet.alxswe.com/rltoken/wcQZzunlgjepxExZFc2ORQ)
+* [Pre Processor Directives in C](https://intranet.alxswe.com/rltoken/S4zfCHzg82fUAxdt8_SaZQ)
+* [The C Preprocessor](https://intranet.alxswe.com/rltoken/G33GiOIZofiIN4Tx9_acbQ)
+* [Standard Predefined Macros](https://intranet.alxswe.com/rltoken/0OYhpL2cJfsIMBWhTuZsAA)
+* [include guard](https://intranet.alxswe.com/rltoken/oF2vgIZNePdU965jCEZLHA)
+* [Common Predefined Macros](https://intranet.alxswe.com/rltoken/ROl5xAMKX-JpenEqmf7FnQ)
+## Learning Objectives
 
-Who invented C?
+### General
 
-Who are Dennis Ritchie, Brian Kernighan and Linus Torvalds?
+* What are macros and how to use them
+* What are the most common predefined macros
+* How to include guard your header files
+## Tasks
 
-What happens when you type gcc main.c?
-
-What is an entry point?
-
-What is main?
-
-How to print text using printf, puts and putchar?
-
-How to get the size of a specific type using the unary operator sizeof
-
-How to compile using gcc?
-
-What is the default program name when compiling with gcc
-
-What is the official C coding style and how to check your code with betty-style?
-
-How to find the right header to include in your source code when using a standard library function?
-
-How does the main function influence the return value of the program//?
-
+| Task | File |
+| ---- | ---- |
