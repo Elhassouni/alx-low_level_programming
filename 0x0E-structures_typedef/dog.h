@@ -17,23 +17,5 @@ struct dog
 	float age;
 	char *owner;
 };
-/**
-  * struct dog - define a new type struct dog with name age and owner
-  *
-  * @name: first member is a string
-  * @age: second member is an int
-  * @owner: third member is a string
-  *
-  * Description: defining new type of struct takes three variables
-  * and will be initialized on init_dog function.
-  */
-/*struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};*/
-
 void init_dog(struct dog *d, char *name, float age, char *owner);
-
 #endif
