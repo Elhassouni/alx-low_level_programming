@@ -27,11 +27,13 @@ struct dog
   * Description: defining new type of struct takes three variables
   * and will be initialized on init_dog function.
   */
-struct dog
+/*struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+};*/
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
+
 #endif
