@@ -71,9 +71,14 @@ void free_dog(dog_t *ptr)
   */
 int _strlen(char *s)
 {
-int i;
-int length = 0;
-for (i = 0; s[i] != '\0'; i++)
-	length++;
+	int i;
+	int length = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		length++;
+	}
+
+	
 	return (length);
 }
