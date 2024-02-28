@@ -12,7 +12,7 @@
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int i,j;
+	int i, j;
 	int length1 = 0;
 	int length2 = 0;
 	dog_t *ptr;
@@ -31,9 +31,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (i = 0; i < length1; i++)
 		ptr->name[i] = name[i];
 	ptr->name[length1] = '\0';
-	
 	length2 = _strlen(owner);
-	
 	ptr->owner = malloc((sizeof(char) * length2) + 1);
 	if (ptr->owner == NULL)
 	{
@@ -41,11 +39,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(ptr);
 		return (NULL);
 	}
-	for(j = 0; j < length2; j++)
+	for (j = 0; j < length2; j++)
 		ptr->owner[j] = owner[j];
 	ptr->owner[length2] = '\0';
 	ptr->age = age;
-	return ptr;
+	return (ptr);
 }
 /**
   * free_dog - Frees memory allocated for a dog structure.
@@ -58,28 +56,24 @@ dog_t *new_dog(char *name, float age, char *owner)
   */
 void free_dog(dog_t *ptr)
 {
-    if (ptr == NULL) 
-    {
-        return;  /* No need to free anything if the pointer is NULL*/
-    }
-
-    free(ptr->name);
-    free(ptr->owner);
-    free(ptr);
+	if (ptr == NULL)
+		return;  /* No need to free anything if the pointer is NULL*/
+	free(ptr->name);
+	free(ptr->owner);
+	free(ptr);
 }
 /**
   * _strlen - a function that gets a length of string
   *
-  * @str: the string to get the length
+  * @s: the string to get the length
   *
   * Return: length of @str
   */
-int _strlen(char *s)                                                            
-{                                                                               
-        int i;                                                                  
-        int length = 0;                                                         
-                                                                                
-        for (i = 0; s[i] != '\0'; i++)                                          
-                length++;
-        return (length);
+int _strlen(char *s)
+{
+int i;
+int length = 0;
+for (i = 0; s[i] != '\0'; i++)
+	length++;
+	return (length);
 }
