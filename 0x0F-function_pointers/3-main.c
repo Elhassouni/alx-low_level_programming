@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	int num2 = atoi(argv[3]);
 	char *operator = argv[2];
 
-	if (argc <= 4)
+	if (argc != 4)
 	{
 	printf("Error");
 	exit(98);
