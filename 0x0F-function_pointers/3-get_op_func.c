@@ -25,7 +25,7 @@ op_t ops[] = {
 	i = 0;
 	while (i < length)
 	{
-		if (s[i] == ops[i].op[i])
+		if (*s == *ops[i].op)
 		{
 			return (ops[i].f);
 		}

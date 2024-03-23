@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	}
 	if (strcmp(argv[2], "+") != 0 && strcmp(argv[2], "-") != 0 &&
 			strcmp(argv[2], "*") != 0 && strcmp(argv[2], "/") != 0
-			&& strcmp(argv[2], "%") != 0)
+			&& strcmp(argv[2], "%") != 0 && (get_op_func(operator) == NULL || operator[1] != '\0'))
 	{
 	printf("Error");
 	exit(99);
