@@ -20,34 +20,35 @@
   */
 int main(int argc, char *argv[])
 {
+	int num1, num2;
 	int result;
-	int num1;                                               
-	int num2;                                               
-	char *operator = argv[2]; 
-
+	char *operator = argv[2];
+	/* Check for wrong number of arguments */
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	/*if (strcmp(argv[2], "+") != 0 && strcmp(argv[2], "-") != 0 &&
-			strcmp(argv[2], "*") != 0 && strcmp(argv[2], "/") != 0
-			&& strcmp(argv[2], "%") != 0 &&
-			(get_op_func(operator) == NULL || operator[1] != '\0'))*/
-	if (get_op_func(operator) == NULL || operator[1] != '\0')
+	/* Check for invalid operator */
+	if (strcmp(operator, "+") != 0 && strcmp(operator, "-") != 0 &&
+		strcmp(operator, "*") != 0 && strcmp(operator, "/") != 0 &&
+		strcmp(operator, "%") != 0)
 	{
-	printf("Error\n");
-	exit(99);
+		printf("Error\n");
+		exit(99);
 	}
-	if ((*operator == 47 || *operator == 37) && num2 == 0)
+
+	/* Check for division and modelo by zero */
+	if ((*operator == '/' || *operator == '%') && num2 == 0)
 	{
-	printf("error\n");
-	exit(100);
+		printf("Error\n");
+		exit(100);
 	}
 	result = get_op_func(operator)(num1, num2);
 	printf("%d\n", result);
-
 	return (0);
 }
+
