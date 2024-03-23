@@ -32,14 +32,15 @@ int main(int argc, char *argv[])
 	}
 	if (strcmp(argv[2], "+") != 0 && strcmp(argv[2], "-") != 0 &&
 			strcmp(argv[2], "*") != 0 && strcmp(argv[2], "/") != 0
-			&& strcmp(argv[2], "%") != 0 && (get_op_func(operator) == NULL || operator[1] != '\0'))
+			&& strcmp(argv[2], "%") != 0 &&
+			(get_op_func(operator) == NULL || operator[1] != '\0'))
 	{
-	printf("Error");
+	printf("Error\n");
 	exit(99);
 	}
 	if ((*operator == 47 || *operator == 37) && num2 == 0)
 	{
-	printf("error");
+	printf("error\n");
 	exit(100);
 	}
 	result = get_op_func(operator)(num1, num2);
