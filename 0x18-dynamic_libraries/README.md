@@ -1,26 +1,26 @@
-# Project: 0x0F. C - Function pointers
+# Project: 0x18. C - Dynamic libraries
 
 ## Resources
 
 #### Read or watch:
 
-* [Function Pointer in C](https://intranet.alxswe.com/rltoken/yt8Q9jxzT_gyRAvnNkAgkw)
-* [Pointers to functions](https://intranet.alxswe.com/rltoken/wP-yWvo9IqbcQsywMmh_iQ)
-* [Function Pointers in C / C++](https://intranet.alxswe.com/rltoken/dAN27S1yyBPeBa8RGfvPNA)
-* [why pointers to functions?](https://intranet.alxswe.com/rltoken/1vvWpH9Ux8axOLc9jPWcMw)
-* [Everything you need to know about pointers in C](https://intranet.alxswe.com/rltoken/G_0lQzs4LAd1e5tKhNMPiw)
+* [What is difference between Dynamic and Static library (Static and Dynamic linking)](https://intranet.alxswe.com/rltoken/XLLmLISlteUIxrLzNdm3_Q)
+* [Creating a dynamic library in C](https://intranet.alxswe.com/rltoken/kNeByCwDzg1CI6EpnDFoPA)
+* [Chapter 17. Creating libraries with GCC](https://intranet.alxswe.com/rltoken/LhNeaQ5B-IVHi5bCj2oNgg)
+* [create dynamic libraries on Linux](https://intranet.alxswe.com/rltoken/i9Sw0q7H-RL4nyvzYO5fNQ)
 ## Learning Objectives
 
 ### General
 
-* What are function pointers and how to use them
-* What does a function pointer exactly hold
-* Where does a function pointer point to in the virtual memory
+* What is a dynamic library, how does it work, how to create one, and how to use it
+* What is the environment variable <code>$LD_LIBRARY_PATH</code> and how to use it
+* What are the differences between static and shared libraries
+* Basic usage <code>nm</code>, <code>ldd</code>, <code>ldconfig</code>
 ## Tasks
 
 | Task | File |
 | ---- | ---- |
-| 0. What's my name | [0-print_name.c](./0-print_name.c) |
-| 1. If you spend too much time thinking about a thing, you'll never get it done | [1-array_iterator.c](./1-array_iterator.c) |
-| 2. To hell with circumstances; I create opportunities | [2-int_index.c](./2-int_index.c) |
-| 3. A goal is not always meant to be reached, it often serves simply as something to aim at | [3-main.c](./3-main.c), [3-op_functions.c](./3-op_functions.c), [3-get_op_func.c](./3-get_op_func.c), [3-calc.h](./3-calc.h) |
+| 0. A library is not a luxury but one of the necessities of life | [libdynamic.so](./libdynamic.so), [main.h](./main.h) |
+| 1. Without libraries what have we? We have no past and no future | [1-create_dynamic_lib.sh](./1-create_dynamic_lib.sh) |
+| 2. Let's call C functions from Python | [100-operations.so](./100-operations.so) |
+| 3. Code injection: Win the Giga Millions! | [101-make_me_win.sh](./101-make_me_win.sh) |
