@@ -32,25 +32,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			{	
 				printf("%s", ptr);
 			}
-			if (i < n - 1)
+			if (i < n - 1 && separator)
 			{
 				printf("%s", separator);
 			}
-		}
-	}
-	else
-	{
-		unsigned int j;
-
-		for (j = 0; j < n; j++)
-		{
-			char *ptr2 = va_arg(elem, char *);
-
-			if (ptr2 == NULL)
-			{
-				printf("nil");
-			}
-			printf("%s", ptr2);
 		}
 	}
 	va_end(elem);
