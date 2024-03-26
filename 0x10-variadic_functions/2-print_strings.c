@@ -26,7 +26,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			ptr =  va_arg(elem, char *);
 			if (ptr == NULL)
 			{
-				printf("nil");
+				printf("(nil)");
 			}
 			printf("%s", ptr);
 			if (i < n - 1)
@@ -45,7 +45,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 			if (ptr2 == NULL)
 			{
-				printf("nil");
+				printf("(nil)");
 			}
 			printf("%s", ptr2);
 		}
