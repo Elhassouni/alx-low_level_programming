@@ -6,7 +6,7 @@
   * @n: number of arguments passed to variadic function.
   */
 void print_strings(const char *separator, const unsigned int n, ...)
-{	
+{
 	va_list elem;
 	unsigned int i;
 	char *ptr;
