@@ -24,7 +24,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		for (; i < n; i++)
 		{
 			ptr =  va_arg(elem, char *);
-			if (ptr == NULL || ptr[0] == '\0')
+			if (ptr == NULL)
 			{
 				printf("nil");
 			}
@@ -43,7 +43,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			char *ptr2 = va_arg(elem, char *);
 
-			if (ptr2 == NULL || ptr2[0] == '\0')
+			if (ptr2 == NULL)
 			{
 				printf("nil");
 			}
