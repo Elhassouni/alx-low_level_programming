@@ -7,8 +7,7 @@
  */
 int main(void)
 {
-	print_strings(NULL, 4, "You ", "know ", "nothing, ", "Jon Snow");
-
+print_strings("; ", 4, "You know", "", "nothing", NULL);
 
 	return (0);
 }

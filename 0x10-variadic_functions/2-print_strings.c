@@ -28,7 +28,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			{
 				printf("(nil)");
 			}
-			printf("%s", ptr);
+			else
+			{
+				printf("%s", ptr);
+			}
 			if (i < n - 1)
 			{
 				printf("%s", separator);
@@ -47,7 +50,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			{
 				printf("(nil)");
 			}
-			printf("%s", ptr2);
+			else
+			{
+				printf("%s", ptr2);
+			}
 		}
 	}
 	va_end(elem);
