@@ -82,28 +82,26 @@ void _string(va_list arg)
 */
 void print_all(const char * const format, ...)
 {
-	unsigned int i;
-	const char *ptr;
-	unsigned int len;
+	unsigned int i, j;
 	va_list ap;
 	char *separator = "";
-
-	va_start(ap, format);
-	symbols all_functions[] = {
+	symbols allfunctions[] = {
 		{'i', _int},
 		{'f', _float},
 		{'c', _char},
 		{'s', _string}
 	};
+	va_start(ap, format);
+
 	while (format && format[i])
 	{
 		j = 0;
-		while (j < 4 && (format[i] != all_functions[j].c)
+		while (j < 4 && (format[i] != allfunctions[j].c))
 			j++;
 		if (j < 4)
 		{
 			printf("%s", separator);
-			all_functions[j].func(ap);
+			allfunctions[j].func(ap);
 			separator = ", ";
 		}
 		i++;
