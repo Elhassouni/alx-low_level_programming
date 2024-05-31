@@ -1,0 +1,10 @@
+CC = gcc
+SRC = $(wildcard *.c)  # Finds all .c files in the directory
+
+all: target
+
+target: $(SRC) m.h
+    $(CC) $(SRC) -o school
+
+clean:
+    rm -f school
