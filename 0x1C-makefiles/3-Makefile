@@ -8,14 +8,14 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 # Rule to clean object files only
 oclean:
-	$(RM) $(OBJS)
+	$(RM) *.o
 
 # Rule to clean intermediate and temporary files
 clean: oclean
 
 # Rule to clean everything including the executable
 fclean: clean
-	$(RM) $(TARGET)
+	$(RM) $(NAME)
 
 # Rule to rebuild everything from scratch
 re: fclean all
