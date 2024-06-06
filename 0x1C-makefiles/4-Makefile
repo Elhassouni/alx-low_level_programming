@@ -10,7 +10,7 @@ $(NAME): $(OBJ)
 clean:
 	$(RM) *~ $(NAME)
 oclean:
-	$(RM) *,o
+	$(RM) *.o
 fclean: clean oclean
 
 re: fclean all
