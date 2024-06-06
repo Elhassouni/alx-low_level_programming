@@ -11,11 +11,11 @@ oclean:
 	$(RM) *.o
 
 # Rule to clean intermediate and temporary files
-clean: oclean
+clean:
+	$(RM) *~ $(NAME)
 
 # Rule to clean everything including the executable
-fclean: clean
-	$(RM) $(NAME)
+fclean: clean oclean
 
 # Rule to rebuild everything from scratch
 re: fclean all
